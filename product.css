@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-size: cover; */
+    /* background-image: url(images/google_offices_in_los_angeles-wallpaper-1600x900.jpg); */
+}
+
+
+body{
+    /* background-image: url(google_offices_in_los_angeles-wallpaper-1600x900.jpg); */
+    /* background-image: url(images/dont_look_down-wallpaper-1366x768.jpg); */
+    /* background-image: url(images/hd_wallpaper_13237.jpg); */
+    background-image: url(images/hd_wallpaper_12598.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#nav{
+    display: flex;
+    padding: 20px;
+    /* background-color: grey; */
+    background-color: orange;
+    /* background-color: rgb(161, 152, 152); */
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+#nav ul{
+    display: flex;
+}
+
+ #nav li{
+    list-style-type: none;
+}
+
+#nav #con5 a{
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+#nav .low{
+    padding-right: 10px;
+}
+
+#con2{
+    width: 15%;
+    justify-content: center;
+    align-self: center;
+    font-size: 25px;
+    color: whitesmoke
+}
+.diff {
+    color: white;
+}
+
+.high{
+    color: whitesmoke;
+    padding-right: 5px;
+}
+#con2 a{
+    font-size: 25px;
+}
+#con3{
+    border: 1px solid whitesmoke;
+    /* font-size: 40px; */
+    height: 40px;
+    width: 30%;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+#con4{
+    width: 10%;
+    /* text-align: center; */
+    align-self: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    /* padding: 10px */
+    /* padding-left: 20px; */
+}
+
+#con4 a{
+    padding: 5px;
+    /* border: 1px solid transparent; */
+    margin-left: 5px;
+    font-size: 25px;
+    /* background-color: whitesmoke; */
+    /* background-color: rgb(39, 8, 8); */
+    /* color: whitesmoke; */
+}
+
+#con5{
+    width: 35%;
+    align-self: center;
+    justify-content: center;
+}
+
+#nav a:hover{
+    color: whitesmoke;
+}
+
+.container{
+    /* border: 1px solid blac; */
+    margin: 10px;
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    /* position: fixed; */
+    background-color: orange;
+    /* background-color: rgb(46, 7, 7); */
+    /* background-color: bl; */
+    /* background-color: white; */
+    width: 50%;
+    height: 450px;
+}
+
+.container:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+
+    #div ul, #nav2 ul{
+    
+        padding: 10px 0;
+        /* text-align: center; */
+        align-self:  center;
+        /* border: 1px solid black; */
+        background-color: whitesmoke;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+    }
+    
+    #div li, #nav2 li{
+        list-style-type: none;
+        padding: 5px;
+        text-align: center;
+    }
+    #div a, #nav2 a{
+        text-decoration: none;
+        /* padding: 25px 5px; */
+        /* margin-bottom: 20px; */
+        color: black;
+        font-style: italic;
+        font-size: 17px;
+    }
+    
+    #img1 img{
+        width: 100%;
+        height: 350px
+    }
+    #img1{
+        width: 60%;
+    }
+    
+    #div2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: fixed; */
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    /* background-color: red; */
+    /* display: flexbox */
+    /* background-color: blue; */
+    /* background-image: url(images/google_offices_in_los_angeles-wallpaper-1600x900.jpg); */
+    /* flex-wrap: wrap; */
+    /* position: fixed; */
+    
+}
+    
+    #container{
+        display: flex;
+        /* margin-top: 170px; */
+    
+        /* justify-items: center; */
+    }
+    #img2 img{
+        width: 100%;
+        height: 175px;
+        padding: 0 10px;
+    }
+    #img2{
+        width: 23%;
+    }
+    
+    #nav2 {
+        width: 15%;
+        color: whitesmoke;
+        /* text-align: center; */
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        bottom: 18%;
+        right: 2%;
+        /* flex-direction: column; */
+    
+    
+    }
+    #total{
+        display: flex;
+        margin-top: 120px;
+    }
+    #total a:hover{
+        font-size: 18px;
+    }
+    #div{
+        /* margin-top: 120px; */
+        color: whitesmoke;
+        /* text-align: center; */
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 15%;
+        bottom: 18%;
+        /* background-color: whitesmoke; */
+        /* padding: 0 10px; */
+        /* margin-right: 10px; */
+        /* padding-right: 10px; */
+        /* align-items:center; */
+        justify-content:center ;
+    }
+    
+#div ul, #nav2 ul{
+    
+    padding: 10px 0;
+    /* text-align: center; */
+    align-self:  center;
+    /* border: 1px solid black; */
+    background-color: whitesmoke;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+#div li, #nav2 li{
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+}
+#div a, #nav2 a{
+    text-decoration: none;
+    /* padding: 25px 5px; */
+    /* margin-bottom: 20px; */
+    color: black;
+    font-style: italic;
+    font-size: 17px;
+}
+
+#img1 img{
+    width: 100%;
+    height: 350px
+}
+#img1{
+    width: 60%;
+}
+
+
+#container{
+    display: flex;
+    /* margin-top: 170px; */
+
+    /* justify-items: center; */
+}
+#img2 img{
+    width: 100%;
+    height: 175px;
+    padding: 0 10px;
+}
+#img2{
+    width: 23%;
+}
+
+#nav2 {
+    width: 15%;
+    color: whitesmoke;
+    /* text-align: center; */
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 18%;
+    right: 2%;
+    /* flex-direction: column; */
+
+
+}
+#total{
+    display: flex;
+    margin-top: 120px;
+}
+#total a:hover{
+    font-size: 18px;
+}
+#div{
+    /* margin-top: 120px; */
+    color: whitesmoke;
+    /* text-align: center; */
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 15%;
+    bottom: 18%;
+    /* background-color: whitesmoke; */
+    /* padding: 0 10px; */
+    /* margin-right: 10px; */
+    /* padding-right: 10px; */
+    /* align-items:center; */
+    justify-content:center ;
+}
+
+
+
+#div2 h3{
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    /* color: white */
+}
+#div2 span{
+    font-size: 16px;
+    font-style: italics;
+    /* color: orange */
+}
+#div2 p{
+    font-weight: 550;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    /* font-size: 20px; */
+    color: white
+    
+}
+
+@media (max-width: 490px){
+    #nav{
+        display: flex;
+        padding: 30px 0;
+        /* padding-top: 20px */
+        /* margin: 20px 0; */
+        /* background-color: grey; */
+        background-color: orange;
+        /* background-color: rgb(161, 152, 152); */
+        /* flex-wrap: nowrap; */
+        position: fixed;
+        /* flex-direction:column; */
+        top: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        /* justify-content: center; */
+        /* justify-self: center; */
+    }
+
+   
+    #con3{
+        border: 1px solid whitesmoke;
+        /* font-size: 40px; */
+        height: 40px;
+        width: 60%;
+        justify-content: center;
+        /* align-self: center; */
+        padding-left: 20px;
+        /* text-align: center; */
+        /* margin-left: 40px; */
+    }
+
+    #con4 a{
+        /* width: 10%; */
+        padding: 5px;
+        /* border: 1px solid transparent; */
+        margin-left: 5px;
+        font-size: 25px;
+        /* background-color: whitesmoke; */
+        /* background-color: rgb(39, 8, 8); */
+        /* color: whitesmoke; */
+    }
+    #con2{
+        width: 20%;
+        justify-content: center;
+        align-self: center;
+        font-size: 25px;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    #con5{
+        width: 100%;
+        padding-top: 30px
+    }
+
+    #div{
+        /* padding: 0 30px; */
+        /* margin-top: 85px; */
+        color: whitesmoke;
+        /* text-align: center; */
+        display: flex;
+        /* position:unset; */
+        flex-direction: column;
+        width: 20%;
+        bottom: 7%;
+        /* background-color: whitesmoke; */
+        /* padding: 0 10px; */
+        /* margin-right: 10px; */
+        padding-left: 15px;
+        /* align-items:center; */
+        justify-content:center ;
+    }
+
+    #nav2 {
+        margin-top: 80px;
+        width: 25%;
+        color: whitesmoke;
+        /* text-align: center; */
+        display: flex;
+        /* justify-content: flex-end; */
+        /* position: unset; */
+        bottom: 5%;
+        right: -3%;
+        padding-right: 20px;
+        
+        /* flex-direction: column; */
+    
+    
+    }
+
+    
+    #img1 img{
+        width: 100%;
+        height: 350px;
+    }
+    #img1{
+        width: 100%;
+    }
+#sec{
+    margin-top: 150px;
+}
+    .container{
+        /* margin-top: 400px; */
+        /* border: 1px solid blac; */
+        margin: 10px;
+        padding: 20px;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+    
+        /* position: fixed; */
+        background-color: orange;
+        /* background-color: rgb(46, 7, 7); */
+        /* background-color: bl; */
+        /* background-color: white; */
+        width: 50%;
+        height: 480px;
+    }
+
+    
+
+#div2 h3{
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    /* color: white */
+}
+#div2 span{
+    font-size: 16px;
+    font-style: italics;
+    /* color: orange */
+}
+#div2 p{
+    font-weight: 550;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    /* font-size: 20px; */
+    color: white
+    
+}
+    
+}
