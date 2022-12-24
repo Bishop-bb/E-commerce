@@ -66,7 +66,7 @@ body{
 }
 #con3{
     border: 1px solid whitesmoke;
-    font-size: 16px;
+    /* font-size: 16px; */
     height: 40px;
     width: 30%;
     justify-content: center;

@@ -11,6 +11,31 @@
 <body>
     <nav id="nav">
         <div id="con2"><a href=""></a>Bb</div>
+        
+        <select onchange="tooi()" name="" id="ewey">
+            <option value="">select a category</option>
+            <option value="smartphones">smartphones</option>
+            <option value="fragrances">fragrances</option>
+            <option value="skincare">skincare</option>
+            <option value="groceries">groceries</option>
+            <option value="home-decoration">home-decoration</option>
+            <option value="furniture">furniture</option>
+            <option value="tops">tops</option>
+            <option value="womens-dresses">womens-dresses</option>
+            <option value="womens-shoes">womens-shoes</option>
+            <option value="laptops">laptops</option>
+            <option value="mens-shirts">mens-shirts</option>
+            <option value="mens-shoes">mens-shoes</option>
+            <option value="mens-watches">mens-watches</option>
+            <option value="womens-watches">womens-watches</option>
+            <option value="womens-bags">womens-bags</option>
+            <option value="womens-jewellery">womens-jewellery</option>
+            <option value="sunglasses">sunglasses</option>
+            <option value="automotive">automotive</option>
+            <option value="motorcycle">motorcycle</option>
+            <option value="lighting">lighting</option>
+        </select>
+        
        <input id="con3" type="text" name="">
         <div id="con4"><a href="#" onclick="get()"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         <ul id="con5">
@@ -23,40 +48,13 @@
 
     <section id="sec">
         <div id="total">
-            <nav id="div">
-                <ul>
-                    <li><a onclick="ok()" id="p1" href="#">smartphones</a></li>
-                    <li><a onclick="ok1()" href="#" id="p2">laptops</a></li>
-                    <li><a onclick="ok2()" href="#" id="p3">fragrances</a></li>
-                    <li><a onclick="ok3()" href="#" id="p4">skincare</a></li>
-                    <li><a onclick="ok4()" href="#" id="p5">groceries</a></li>
-                    <li><a onclick="ok5()" href="#" id="p6">home-decoration</a></li>
-                    <li><a onclick="ok6()"  href="#" id="p7">furniture</a></li>
-                    <li><a onclick="ok7()" href="#" id="p8">tops</a></li>
-                    <li><a onclick="ok8()" href="#" id="p9">womens-dresses</a></li>
-                    <li><a onclick="ok9()" href="#" id="p10">womens-shoes</a></li>
-                    <!-- <li><a onclick="click()" href="">parada</a></li>            -->
-                </ul> 
-            </nav>
+
     
     
               <div id="div2"  ></div>
     
     
-            <nav id="nav2">
-                 <ul>
-                    <li><a onclick="ok10()" href="#" id="p11">mens-shirts</a></li>
-                    <li><a onclick="ok11()" href="#" id="p12">mens-shoes</a></li>
-                    <li><a onclick="ok12()" href="#" id="p13">mens-watches</a></li>
-                    <li><a onclick="ok13()" href="#" id="p14">womens-watches</a></li>
-                    <li><a onclick="ok14()" href="#" id="15">womens-bags</a></li>
-                    <li><a onclick="ok15()" href="#" id="p16">womens-jewellery</a></li>
-                    <li><a onclick="ok16()" href="#" id="p17">sunglasses</a></li>
-                    <li><a onclick="ok17()" href="#" id="p18">automotive</a></li>
-                    <li><a onclick="ok18()" href="#" id="p19">motorcycle</a></li>
-                    <li><a onclick="ok19()" href="#" id="p20">lighting</a></li>
-                </ul> 
-            </nav>
+           
         </div>
         
       </section>
@@ -64,6 +62,12 @@
 
 
     <script>
+
+        function tooi(){
+            document.getElementById('con3').value = document.getElementById('ewey').value
+            console.log(document.getElementById('ewey').value) 
+        }
+        
      
         function ok(){
         

@@ -49,7 +49,7 @@ body{
 }
 
 #con2{
-    width: 15%;
+    width: 10%;
     justify-content: center;
     align-self: center;
     font-size: 25px;
@@ -73,6 +73,7 @@ body{
     width: 30%;
     justify-content: center;
     padding-left: 20px;
+    /* font-size: 16px; */
 }
 
 #con4{
@@ -84,7 +85,9 @@ body{
     /* padding: 10px */
     /* padding-left: 20px; */
 }
-
+#ewey{
+    width: 12%;
+}
 #con4 a{
     padding: 5px;
     /* border: 1px solid transparent; */
@@ -112,8 +115,7 @@ body{
     /* text-align: center; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
+   
 
     /* position: fixed; */
     background-color: orange;
@@ -121,7 +123,7 @@ body{
     /* background-color: bl; */
     /* background-color: white; */
     width: 50%;
-    height: 450px;
+    /* height: 450px; */
 }
 
 .container:hover{
@@ -133,9 +135,9 @@ body{
     
         padding: 10px 0;
         /* text-align: center; */
-        align-self:  center;
+        /* align-self:  center; */
         /* border: 1px solid black; */
-        background-color: whitesmoke;
+        /* background-color: red; */
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         
     }
@@ -154,12 +156,12 @@ body{
         font-size: 17px;
     }
     
-    #img1 img{
+    #img1 .img{
         width: 100%;
-        height: 350px
+        height: 30px;
     }
     #img1{
-        width: 60%;
+        width: 10%;
     }
     
     #div2{
@@ -187,7 +189,7 @@ body{
     }
     #img2 img{
         width: 100%;
-        height: 175px;
+        height: 15px;
         padding: 0 10px;
     }
     #img2{
@@ -199,7 +201,7 @@ body{
         color: whitesmoke;
         /* text-align: center; */
         display: flex;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
         position: fixed;
         bottom: 18%;
         right: 2%;
@@ -216,7 +218,7 @@ body{
     }
     #div{
         /* margin-top: 120px; */
-        color: whitesmoke;
+        /* color: whitesmoke; */
         /* text-align: center; */
         display: flex;
         position: fixed;
@@ -237,8 +239,8 @@ body{
     /* text-align: center; */
     align-self:  center;
     /* border: 1px solid black; */
-    background-color: whitesmoke;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background-color: whitesmoke; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     
 }
 
@@ -302,7 +304,7 @@ body{
 }
 #div{
     /* margin-top: 120px; */
-    color: whitesmoke;
+    /* color: whitesmoke; */
     /* text-align: center; */
     display: flex;
     position: fixed;
@@ -316,6 +318,7 @@ body{
     /* align-items:center; */
     justify-content:center ;
 }
+
 
 
 
@@ -357,13 +360,15 @@ body{
         /* justify-content: center; */
         /* justify-self: center; */
     }
-
+#ewey{
+    width: 15%;
+}
    
     #con3{
         border: 1px solid whitesmoke;
         /* font-size: 40px; */
         height: 40px;
-        width: 60%;
+        width: 40%;
         justify-content: center;
         /* align-self: center; */
         padding-left: 20px;
@@ -482,5 +487,12 @@ body{
     color: white
     
 }
-    
+#sec{
+    margin-top: 180px;
+}
+}
+@media (max-width: 400px){
+    #sec{
+        margin-top: 200px;
+    }
 }
