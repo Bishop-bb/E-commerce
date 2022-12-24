@@ -490,9 +490,39 @@ body{
 #sec{
     margin-top: 180px;
 }
+
+.container{
+    /* border: 1px solid blac; */
+    margin: 10px;
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+   
+
+    /* position: fixed; */
+    background-color: orange;
+    /* background-color: rgb(46, 7, 7); */
+    /* background-color: bl; */
+    /* background-color: white; */
+    width: 70%;
+    /* height: 450px; */
 }
+}
+
+
+
 @media (max-width: 400px){
     #sec{
         margin-top: 200px;
+    }
+}
+
+
+@media (max-width: 355px){
+    #nav #con5 a{
+        text-decoration: none;
+        padding: 0 5px;
+        font-size: 16px;
     }
 }
