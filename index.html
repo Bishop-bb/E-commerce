@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,7 +14,7 @@
        <input id="con3" type="text" name="">
         <div id="con4"><a href="#" onclick="rest()"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         <ul id="con5">
-            <li><a class="diff" href="products.html">CATEGORIES</a></li>
+            <li><a class="diff" href="pages/products.html">CATEGORIES</a></li>
             <li><a href=""><i class="fa-regular fa-user low"></i>Acount</a></li>
             <li><a href=""><i class="fa-sharp fa-solid fa-question low"></i>Help</a></li>
             <li><a href=""><i class="fa-solid fa-cart-shopping low"></i>Cart</a></li>
@@ -101,172 +101,11 @@
     <script>
 
 
-   
-     
-        function ok(){
-        
-            document.getElementById('con3').value = document.getElementById('p1').innerHTML
-            
-        }
-
-        function ok1(){
-        
-        document.getElementById('con3').value = document.getElementById('p2').innerHTML
-        
-    }
-
-    function ok2(){
-        
-        document.getElementById('con3').value = document.getElementById('p3').innerHTML
-        
-    }
-
-    function ok3(){
-        
-        document.getElementById('con3').value = document.getElementById('p4').innerHTML
-        
-    }
-
-    function ok4(){
-        
-        document.getElementById('con3').value = document.getElementById('p5').innerHTML
-        
-    }
-
-    function ok5(){
-        
-        document.getElementById('con3').value = document.getElementById('p6').innerHTML
-        
-    }
-
-    function ok6(){
-        
-        document.getElementById('con3').value = document.getElementById('p7').innerHTML
-        
-    }
-
-    function ok7(){
-        
-        document.getElementById('con3').value = document.getElementById('p8').innerHTML
-        
-    }
-
-    function ok8(){
-        
-        document.getElementById('con3').value = document.getElementById('p9').innerHTML
-        
-    }
-
-    function ok9(){
-        
-        document.getElementById('con3').value = document.getElementById('p10').innerHTML
-        
-    }
-
-    function ok10(){
-        
-        document.getElementById('con3').value = document.getElementById('p11').innerHTML
-        
-    }
-
-    function ok11(){
-        
-        document.getElementById('con3').value = document.getElementById('p12').innerHTML
-        
-    }
-
-    function ok12(){
-        
-        document.getElementById('con3').value = document.getElementById('13').innerHTML
-        
-    }
-
-    function ok13(){
-        
-        document.getElementById('con3').value = document.getElementById('p14').innerHTML
-        
-    }
-
-    function ok14(){
-        
-        document.getElementById('con3').value = document.getElementById('p15').innerHTML
-        
-    }
-
-    function ok15(){
-        
-        document.getElementById('con3').value = document.getElementById('p16').innerHTML
-        
-    }
-
-    function ok16(){
-        
-        document.getElementById('con3').value = document.getElementById('p17').innerHTML
-        
-    }
-
-    function ok17(){
-        
-        document.getElementById('con3').value = document.getElementById('p18').innerHTML
-        
-    }
-
-    function ok18(){
-        
-        document.getElementById('con3').value = document.getElementById('p19').innerHTML
-        
-    }
-
-    function ok19(){
-        
-        document.getElementById('con3').value = document.getElementById('p20').innerHTML
-        
-    }
-
    function click(){
     document.getElementById('container').style.display = "none"
    }
     
-    
-   
-         async function get(){
-            // let input = document.getElementById('con3').value
-            console.log(input)
-    let results = await fetch(`https://dummyjson.com/products/category/${input}`);
-    let data = await results.json() 
-    console.log(data)
-    console.log(data.products[0].images[0])
-        console.log(data.products[0].description)
 
-                    let empty = " "
-    let currency = " $"
-    let percent = "%" + " " + "off, "
-    let value = ""
-    console.log(value)
-        let cont = document.getElementById("div2")
-        cont.innerHTML = ""
-        console.log(data.products[0].description)
-        for (let i=0; i<data.products.length; i++) {
-            let value =
-
-                    `<div class="container">
-                <h3 id="title1">${data.products[i].title}</h3>
-                <div id= "img">
-                    <img id="img1" class="img" src="${data.products[i].thumbnail}">
-                </div>
-    
-                <div id="mm">
-                    <span>Discount:<span id="dis1">${empty}${data.products[i].discountPercentage}${percent}</span></span>
-                    <span>Price: <span id="pr1">${currency}${empty} ${data.products[i].price}</span></span>
-                    <p>Rating: <span id="r1">${empty} ${data.products[i].rating}</span></p>
-                    <p>Description</br><span class= "words" id="des1" >${data.products[i].description}</span></p>
-                </div>
-            </div>`
-            
-            cont.innerHTML += value
-            console.log(value)
-        }
-    }
 
     document.getElementById('penego').style.display = "none"
 
