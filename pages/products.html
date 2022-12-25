@@ -194,17 +194,19 @@
     // else if(document.getElementById('con3').value == ""){
     //     document.getElementById('div2').style.display = "none"
     // }
-
+  
          async function get(){
             let input = document.getElementById('con3').value
             console.log(input)
     let results = await fetch('https://dummyjson.com/products/category/'+ `${input}`);
     let data = await results.json() 
-
-    if(data.products = []){
+    // document.getElementById('err').innerHTML = ""
+    if(data.limit = "0"){
         console.log('okay')
         document.getElementById('err').innerHTML = "oops, we do not have this product. Try searching for another product."
     }
+    
+   
     console.log(data)
     console.log(data.products[0].images[0])
         console.log(data.products[0].description)
@@ -236,6 +238,7 @@
             
             cont.innerHTML += value
             console.log(value)
+            
         }
         
 
