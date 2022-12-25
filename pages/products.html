@@ -58,7 +58,7 @@
         </div>
         
       </section>
-
+      <h3 id="err"></h3>
 
 
     <script>
@@ -200,6 +200,11 @@
             console.log(input)
     let results = await fetch('https://dummyjson.com/products/category/'+ `${input}`);
     let data = await results.json() 
+
+    if(data.products = []){
+        console.log('okay')
+        document.getElementById('err').innerHTML = "oops, we do not have this product. Try searching for another product."
+    }
     console.log(data)
     console.log(data.products[0].images[0])
         console.log(data.products[0].description)

@@ -39,8 +39,9 @@
             </ul> -->
         </nav>
 
-
+        
         <div id="penego">
+           
             
          <div id="main">
             <p><span id="image-des"></span></p>
@@ -79,7 +80,6 @@
             </div>
     
         </div>
-
         <nav id="nav2">
             <!-- <ul>
                 <li><a onclick="ok10()" href="#" id="p11">mens-shirts</a></li>
@@ -95,7 +95,7 @@
             </ul> -->
         </nav>
     </div>
-
+    <h3 id="err"></h3>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
@@ -108,22 +108,30 @@
 
 
     document.getElementById('penego').style.display = "none"
-
+ 
     function rest(){
 
         // 
+       
         document.getElementById('penego').style.display = "block"
         document.getElementById('contained').style.display = "none"
         let image = ""
         let input = document.getElementById('con3').value
      axios.get('https://dummyjson.com/products/search?q='+ `${input}`).then(results=>{
+
+        if(results.data.products[0] = "undefined"){
+            document.getElementById('main').style.display = "none"
+            document.getElementById('contained').style.display = "none"
+            document.getElementById('err').innerHTML = "oops, we do not have this product. Try searching for another product."
+            
+        }
         console.log(results.data.products[0])
         console.log(results.data.products[0].images.length)
         document.getElementById('img-price').innerHTML =  "$" + results.data.products[0].price
         document.getElementById('img-rating').innerHTML = results.data.products[0].rating
         document.getElementById('img-brand').innerHTML = results.data.products[0].brand
         // document.getElementById('').innerHTML = 
-
+        
      document.getElementById('image-des').innerHTML =  results.data.products[0].description
     let contt = document.getElementById("div3")
     contt.innerHTML = ""
@@ -148,7 +156,7 @@
     //    contt.src = results.data.products[0].images[0]
     //    console.log(contt.src)
      }).catch(err=>{
-        // console.log(err)
+        console.log(err)
      })
 
     }

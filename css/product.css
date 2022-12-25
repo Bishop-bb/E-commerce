@@ -11,12 +11,15 @@ body{
     /* background-image: url(google_offices_in_los_angeles-wallpaper-1600x900.jpg); */
     /* background-image: url(images/dont_look_down-wallpaper-1366x768.jpg); */
     /* background-image: url(images/hd_wallpaper_13237.jpg); */
-    background-image: url(images/hd_wallpaper_12598.jpg);
+    background-image: url(../images/hd_wallpaper_12598.jpg);
     background-attachment: fixed;
     background-size: cover;
 
 }
-
+#err{
+    font-style: italic;
+    text-align: center;
+}
 #nav{
     display: flex;
     padding: 20px;
@@ -463,7 +466,7 @@ body{
         /* background-color: bl; */
         /* background-color: white; */
         width: 50%;
-        height: 480px;
+        height: 510px;
     }
 
     
