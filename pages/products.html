@@ -194,18 +194,20 @@
     // else if(document.getElementById('con3').value == ""){
     //     document.getElementById('div2').style.display = "none"
     // }
-  
+    document.getElementById('err').innerHTML = " "
          async function get(){
             let input = document.getElementById('con3').value
             console.log(input)
     let results = await fetch('https://dummyjson.com/products/category/'+ `${input}`);
     let data = await results.json() 
-    // document.getElementById('err').innerHTML = ""
+    document.getElementById('err').innerHTML = ""
     if(data.limit = "0"){
         console.log('okay')
         document.getElementById('err').innerHTML = "oops, we do not have this product. Try searching for another product."
     }
-    
+    // else{
+    //     document.getElementById('err').innerHTML = " "
+    // }
    
     console.log(data)
     console.log(data.products[0].images[0])
@@ -235,7 +237,7 @@
                     <p>Description</br><span class= "words" id="des1" >${data.products[i].description}</span></p>
                 </div>
             </div>`
-            
+            document.getElementById('err').innerHTML = " "
             cont.innerHTML += value
             console.log(value)
             
