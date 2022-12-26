@@ -20,7 +20,7 @@
             <li><a href=""><i class="fa-solid fa-cart-shopping low"></i>Cart</a></li>
         </ul>
     </nav>
-
+  
     <div id="total">
         <nav id="div">
          <!-- categories -->
@@ -45,9 +45,9 @@
             
          <div id="main">
             <p><span id="image-des"></span></p>
-            <p>PRICE: <span id="img-price"></span></p>
-            <p>RATING: <span id="img-rating"></span></p>
-            <p>BRAND: <span id="img-brand"></span></p>
+            <p id="hm">PRICE: <span id="img-price"></span></p>
+            <p id="hmm">RATING: <span id="img-rating"></span></p>
+            <p id="hmmm">BRAND: <span id="img-brand"></span></p>
          </div>
 
         
@@ -94,7 +94,9 @@
                 <li><a onclick="ok19()" href="#" id="p20">lighting</a></li>
             </ul> -->
         </nav>
+
     </div>
+   
     <h3 id="err"></h3>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -118,14 +120,24 @@
         let image = ""
         let input = document.getElementById('con3').value
      axios.get('https://dummyjson.com/products/search?q='+ `${input}`).then(results=>{
-
+        document.getElementById('main').style.display = "inline"
         if(results.limit = "0"){
             console.log(results)
-            document.getElementById('main').style.display = "none"
-            document.getElementById('contained').style.display = "none"
+            // document.getElementById('main').style. display = "none"
+            // document.getElementById('contained').style.display = "none"
             document.getElementById('err').innerHTML = "oops, we do not have this product. Try searching for another product."
-            
+            // document.getElementById('hm').style.display = "none"
+            // document.getElementById('hmm').style.display = "none"
+            // document.getElementById('hmmm').style.display = "none"
+            document.getElementById('main').style.display = "none"
         }
+        else{
+            document.getElementById('main').style.display = ""
+        }
+            
+       
+       results.data.products[0].images.length != 0
+            document.getElementById('penego').style.display = "block"
         console.log(results.data.products[0])
         console.log(results.data.products[0].images.length)
         document.getElementById('img-price').innerHTML =  "$" + results.data.products[0].price
@@ -152,12 +164,15 @@
 
 
    contt.innerHTML += image
-    }
- 
+  
+}
+
     //    contt.src = results.data.products[0].images[0]
     //    console.log(contt.src)
      }).catch(err=>{
         console.log(err)
+        // document.getElementById('total').style.display = "none"
+        // document.getElementById('err').innerHTML = err
      })
 
     }
