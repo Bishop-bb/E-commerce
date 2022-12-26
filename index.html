@@ -108,7 +108,7 @@
 
 
     document.getElementById('penego').style.display = "none"
- 
+    
     function rest(){
 
         // 
@@ -119,7 +119,8 @@
         let input = document.getElementById('con3').value
      axios.get('https://dummyjson.com/products/search?q='+ `${input}`).then(results=>{
 
-        if(results.data.products[0] = "undefined"){
+        if(results.limit = "0"){
+            console.log(results)
             document.getElementById('main').style.display = "none"
             document.getElementById('contained').style.display = "none"
             document.getElementById('err').innerHTML = "oops, we do not have this product. Try searching for another product."
@@ -131,7 +132,7 @@
         document.getElementById('img-rating').innerHTML = results.data.products[0].rating
         document.getElementById('img-brand').innerHTML = results.data.products[0].brand
         // document.getElementById('').innerHTML = 
-        
+        document.getElementById('err').innerHTML = ""
      document.getElementById('image-des').innerHTML =  results.data.products[0].description
     let contt = document.getElementById("div3")
     contt.innerHTML = ""
